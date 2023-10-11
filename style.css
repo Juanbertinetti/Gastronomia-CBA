@@ -1,0 +1,318 @@
+/* generales ************************************/
+
+/* modelo de caja */
+* {
+    box-sizing: border-box;
+}
+
+/* limpiar */
+html,
+body,
+h1,
+figure,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* fuentes*/
+html {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+
+
+html,
+body {
+    height: 100%;
+}
+/* primero movil */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.padding-bloques {
+    /* relleno horizontal */
+    padding-inline: 10px;
+}
+/* escritorio */
+@media (min-width: 960px) {
+    .padding-bloques  {
+        padding-inline: 10%;
+    }
+}
+
+
+
+/* ESTRUCTURA BASICA*/
+
+/* bloque cabecera HEADEAR*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 15px;
+    background-color: #fff6c6;
+}
+.header__logo-link {
+    text-decoration: none;
+}
+.header__figure {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.header__logo {
+    height: 100%;
+}
+.nav-principal {
+    gap: 15px;
+    display: flex;
+}
+.nav-principal > a {
+    color: #333333;
+    text-decoration: none;
+    gap: 15px;
+}
+
+/* bloque main general */
+.main {
+    flex-grow: 1;
+    display: block;
+}
+
+.main__figure {
+    width: 100%;
+}
+.main__imagen {
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+}
+.main__titulo{
+    font-weight: lighter;
+    color:#555555;
+    text-align: center;
+    margin-block: 40px 40px;
+    padding-block: 25px;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc ;
+}
+
+
+
+/* bloque pie FOPTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #d8d8d8;
+}
+.footer__lista {
+    list-style: none;
+}
+.footer__item {
+    text-align: center;
+    padding-block: 10px;
+}
+.footer__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555555;
+}
+
+
+/* PAGINAS */
+/* página index *********************************/
+.main__boton-contacto {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #333333;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-radius: 6px;
+    border:none;
+}
+main  p
+{
+    text-align: center;
+    margin-block: 15px 25px;
+    padding-inline: 10%;
+
+}
+
+.index-desc__bloques {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-block-end: 35px;
+}
+.index-desc__bloque
+> h3 {
+    text-align: center;
+    margin-block: 50px 25px;
+}
+
+article
+{
+    display: block;
+}
+
+.index-desc__fig {
+    width: 200px;
+    height: 200px;
+    margin-block: 30px;
+    margin-inline: auto;
+    display: block;
+    justify-content: space-between;
+}
+figure
+{
+    display: block;
+}
+
+.index-desc__fig
+> img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 4px solid #fff;
+    border-radius: 999px;
+}
+
+img {
+    overflow-clip-margin:  content-box;
+    overflow: clip;
+}
+
+.index-desc__parrafo {
+    text-align: center;
+}
+
+.index-desc__parrafo  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* página contacto ******************************/
+.form{
+    display:flex;
+    flex-direction: column;
+    padding-inline: 20%;
+    margin-block-end: 40px;
+}
+.form label,.form input,.form textarea{
+    font-size: inherit;
+    font-family: inherit;
+    padding-block: 10px;
+    padding-inline: 5px;
+    margin-block-end: 10px;
+}
+.form input{
+    border: 1px solid #333;
+}
+.form textarea{
+    border: 1px solid #333;
+    min-height: 300px;
+}
+.form button{
+    font-size: inherit;
+    color: #ffffff;
+    background-color: #333333;
+    padding-block: 20px;
+    margin-block-start: 15px;
+    border-radius: 6px;
+    border:none;
+}
+
+
+/* Pagina de restaurante*/
+
+div 
+{
+    display: block;
+}
+
+.modelos-article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 10px;
+    padding-inline: 10px;
+    margin-block-end: 30px;
+}
+.modelos-article--color {
+    background-color: #eeeeee;
+}
+.modelos-article__imagen {
+    width: 100%;
+}
+.modelos-article__imagen > img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.modelos-article__info {
+    width: 100%;
+    padding-block: 20px 20px;
+}
+.modelos-article__titulo {
+    margin-block-end: 20px;
+}
+.modelos-article_parrafo {
+    margin-block-end: 25px;
+}
+
+/* Boton restaurente*/
+
+.boton-oscuro,
+.boton-claro {
+    cursor: pointer;
+    font-size: 1rem;
+    padding-inline: 15px;
+    padding-block: 10px;
+    margin-block: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.boton-oscuro {
+    color: var(--boton1-color-fuente);
+    background-color: var(--boton1-color-fondo);
+    border: 1px solid var(--boton2-color-fondo);
+}
+.boton-oscuro:hover {
+    background-color: var(--boton1-color-fondo-sobre);
+}
+
+/* Medias queries */
+@media screen and (min-width: 768px) {
+    .main-modelos {
+        padding-inline: 10%;
+    }
+    .modelos-article {
+        display: flex;
+        flex-direction: row;
+    }
+    .modelos-article__imagen {
+        width: 40%;
+        > img {
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    .modelos-article__info {
+        width: 60%;
+    }
+
+    
+}
+
+

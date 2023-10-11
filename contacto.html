@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurantes | Cordoba</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--bloque cabecera-->
+        <header class="header padding-bloques">
+            <a class="header__logo-link" href="./index.html">
+                <figure class="header__figure">
+                    <img
+                        src="icono.cba.svg"
+                        class="header__logo"
+                        alt="icono cba"
+                    />
+                </figure>
+            </a>
+            <nav class="nav-principal">
+                <a href="index.html">Inicio</a>
+                <a href="restaurantes.html">Restaurantes CBA</a>
+                <a href="contacto.html">Contacto</a>    
+                
+            </nav>
+        </header>
+        <!--bloque principal-->
+        <main class="main padding-bloques">
+            <!-- contenido de las páginas -->
+            <h1 class="main__titulo">Se parte de la comunidad</h1>
+            <form class="form" action="contacto.html"  method="post">
+                <label for="name">Nombre</label>
+                <input type="text"  id="name" name="Nombre">
+                <label for="id-email">Email</label>
+                <input id="id-email" name="Email" type="email" placeholder="email@email.com" required />
+                <label for="id-fecha">Fecha de apertura del local</label>
+                <input id="id-fecha" name="Fecha estimada" type="date" required />
+                <label for="id-consulta">Consulta</label>
+                <textarea id="id-consulta" name ="Consulta" cols="30" rows="10" required></textarea>
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </main>
+        <!--bloque pie-->
+        <footer class="footer padding-bloques">
+            <ul class="footer__lista">
+                <li class="footer__item">
+                    <a
+                        class="footer__link"
+                        href="http://miredsocial.com"
+                        target="_blank"
+                    >
+                        <img src="img/ig.svg" /> instagram
+                    </a>
+                </li>
+                <li class="footer__item">&copy; dos ríos 2023</li>
+            </ul>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
