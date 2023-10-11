@@ -79,10 +79,10 @@ body {
 }
 
 /* bloque main general */
-.main {
+/*.main {
     flex-grow: 1;
     display: block;
-}
+}*/
 
 .main__figure {
     width: 100%;
@@ -150,7 +150,22 @@ main  p
     flex-direction: column;
     width: 100%;
     padding-block-end: 35px;
+    justify-content: space-between;
 }
+
+.index-desc_bloques article {
+    flex: 0 0 calc(30% - 20px); /* Establece un ancho fijo para cada artículo y considera el margen */
+    border: 1px solid #ccc; /* Agrega un borde al artículo */
+    margin: 10px; /* Agrega un margen entre los artículos */
+    padding: 10px; /* Agrega espacio interno para que el borde no esté pegado al contenido */
+    text-align: center; /* Centra el contenido */
+}
+
+
+.index-desc_bloques figure img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+}
+
 .index-desc__bloque
 > h3 {
     text-align: center;
@@ -170,10 +185,7 @@ article
     display: block;
     justify-content: space-between;
 }
-figure
-{
-    display: block;
-}
+
 
 .index-desc__fig
 > img {
